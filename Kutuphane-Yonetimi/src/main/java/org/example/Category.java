@@ -28,7 +28,7 @@ public class Category {
     @Column(name = "description")
     private  String description;
 
-@ManyToMany(mappedBy ="category",cascade = CascadeType.REMOVE)
+@ManyToMany(mappedBy ="bookcat",cascade = CascadeType.REMOVE)
     private List<Book> bookList;
 
     @Override
